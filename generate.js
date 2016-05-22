@@ -18,12 +18,12 @@ const posts_dir  = path.join(source_dir, 'posts')
 
 class File {
   constructor(filepath) {
-    this.stats = fs.lstatSync(filepath)
+    this.stats        = fs.lstatSync(filepath)
     this.absolutePath = path.resolve(filepath)
-    this.parsed = path.parse(filepath)
-    this.filename = this.parsed.base
-    this.name = this.parsed.name
-    this.extname = this.parsed.ext
+    this.parsed       = path.parse(filepath)
+    this.filename     = this.parsed.base
+    this.name         = this.parsed.name
+    this.extname      = this.parsed.ext
   }
 }
 
